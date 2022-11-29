@@ -10,6 +10,9 @@ class Vehicles(ABC):
         self.consumption = consumption
         self.tank_capacity = tank_capacity
 
+    def __repr__(self) -> str:
+        return f'Printing <\'{self.__class__.__name__}\' model: {self.model}, weight: {self.weight}, consumption: {self.consumption}, tank_capacity: {self.tank_capacity}>'
+
     @abstractmethod
     def power_reserve(self):
         return f' запас хода {self.model}: {self.tank_capacity / self.consumption * 100} километров'
@@ -20,10 +23,6 @@ class Vehicles(ABC):
             return f'{self.model} может ездить по городу'
         else:
             return f'{self.model} не может ездить по городу'
-
-    @abstractmethod
-    def Print(self):
-        pass
 
 
 class Car(Vehicles):
@@ -39,9 +38,6 @@ class Car(Vehicles):
     def city_driving(self):
         return super().city_driving()
 
-    def Print(self):
-        return f"Printing Car with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
-
 
 class Gazelle(Vehicles):
     average_load_capacity: int = 2140
@@ -55,9 +51,6 @@ class Gazelle(Vehicles):
 
     def city_driving(self):
         return super().city_driving()
-
-    def Print(self):
-        return f"Printing Gazelle with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
 
 
 class Kamaz(Vehicles):
@@ -73,9 +66,6 @@ class Kamaz(Vehicles):
     def city_driving(self):
         return super().city_driving()
 
-    def Print(self):
-        return f"Printing Kamaz with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
-
 
 class Truck(Vehicles):
     average_load_capacity: int = 20000
@@ -89,9 +79,6 @@ class Truck(Vehicles):
 
     def city_driving(self):
         return super().city_driving()
-
-    def Print(self):
-        return f"Printing Truck with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
 
 
 class Belaz(Vehicles):
@@ -108,5 +95,5 @@ class Belaz(Vehicles):
     def city_driving(self):
         return super().city_driving()
 
-    def Print(self):
-        return f"Printing Belaz with model: {self.model}, weight: {self.weight}, height: {self.height}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
+    def __repr__(self) -> str:
+        return f'Printing <\'{self.__class__.__name__}\' model: {self.model}, weight: {self.weight}, height: {self.height},consumption: {self.consumption}, tank_capacity: {self.tank_capacity}>'
