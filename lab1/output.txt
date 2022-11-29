@@ -1,5 +1,5 @@
-Printing Car with model: VW Polo, weight: 1200, consumption: 45 and tank_capacity: 6
-Printing Gazelle with model: Газель 3302, weight: 1850, consumption: 70 and tank_capacity: 11
-Printing Kamaz with model: Камаз 4310, weight: 7080, consumption: 250 and tank_capacity: 30
-Printing Truck with model: Scania s730, weight: 8700, consumption: 500 and tank_capacity: 42
-Printing Belaz with model: БелАЗ-75710, weight: 360000, height: 8, consumption: 5600 and tank_capacity: 1300
+Printing <'Car' model: VW Polo, weight: 1200, consumption: 45, tank_capacity: 6>
+Printing <'Gazelle' model: Газель 3302, weight: 1850, consumption: 70, tank_capacity: 11>
+Printing <'Kamaz' model: Камаз 4310, weight: 7080, consumption: 250, tank_capacity: 30>
+Printing <'Truck' model: Scania s730, weight: 8700, consumption: 500, tank_capacity: 42>
+Printing <'Belaz' model: БелАЗ-75710, weight: 360000, height: 8,consumption: 5600, tank_capacity: 1300>
