@@ -11,11 +11,11 @@ class Vehicles(ABC):
         self.tank_capacity = tank_capacity
 
     @abstractmethod
-    def PowerReserve(self):
+    def power_reserve(self):
         return f' запас хода {self.model}: {self.tank_capacity / self.consumption * 100} километров'
 
     @abstractmethod
-    def CityDriving(self):
+    def city_driving(self):
         if self.weight < 2000:
             return f'{self.model} может ездить по городу'
         else:
@@ -33,11 +33,11 @@ class Car(Vehicles):
         self.name = "Car"
         super().__init__(model, weight, consumption, tank_capacity)
 
-    def PowerReserve(self):
-        return super().PowerReserve()
+    def power_reserve(self):
+        return super().power_reserve()
 
-    def CityDriving(self):
-        return super().CityDriving()
+    def city_driving(self):
+        return super().city_driving()
 
     def Print(self):
         return f"Printing Car with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
@@ -50,11 +50,11 @@ class Gazelle(Vehicles):
         self.name = "Gazelle"
         super().__init__(model, weight, consumption, tank_capacity)
 
-    def PowerReserve(self):
-        return super().PowerReserve()
+    def power_reserve(self):
+        return super().power_reserve()
 
-    def CityDriving(self):
-        return super().CityDriving()
+    def city_driving(self):
+        return super().city_driving()
 
     def Print(self):
         return f"Printing Gazelle with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
@@ -67,11 +67,11 @@ class Kamaz(Vehicles):
         self.name = "Kamaz"
         super().__init__(model, weight, consumption, tank_capacity)
 
-    def PowerReserve(self):
-        return super().PowerReserve()
+    def power_reserve(self):
+        return super().power_reserve()
 
-    def CityDriving(self):
-        return super().CityDriving()
+    def city_driving(self):
+        return super().city_driving()
 
     def Print(self):
         return f"Printing Kamaz with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
@@ -84,11 +84,11 @@ class Truck(Vehicles):
         self.name = "Truck"
         super().__init__(model, weight, consumption, tank_capacity)
 
-    def PowerReserve(self):
-        return super().PowerReserve()
+    def power_reserve(self):
+        return super().power_reserve()
 
-    def CityDriving(self):
-        return super().CityDriving()
+    def city_driving(self):
+        return super().city_driving()
 
     def Print(self):
         return f"Printing Truck with model: {self.model}, weight: {self.weight}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
@@ -102,11 +102,11 @@ class Belaz(Vehicles):
         super().__init__(model, weight, consumption, tank_capacity)
         self.height = height
 
-    def PowerReserve(self):
-        return super().PowerReserve()
+    def power_reserve(self):
+        return super().power_reserve()
 
-    def CityDriving(self):
-        return super().CityDriving()
+    def city_driving(self):
+        return super().city_driving()
 
     def Print(self):
         return f"Printing Belaz with model: {self.model}, weight: {self.weight}, height: {self.height}, consumption: {self.consumption} and tank_capacity: {self.tank_capacity}"
