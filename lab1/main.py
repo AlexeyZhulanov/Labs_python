@@ -46,3 +46,4 @@ with open(encoding='utf-8', file='output.txt', mode='w') as file:
     for obj in objects:
         output = obj.__repr__() + "\n"
         file.write(output)
+# Сдана
