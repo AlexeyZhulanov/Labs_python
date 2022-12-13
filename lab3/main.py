@@ -81,3 +81,4 @@ with open('output.txt', 'w', encoding='utf-8') as file:
     file.write(
         f'Преобладают выжившие из класса: {max_alived_class:}\n'
     )
+    # Сдана
